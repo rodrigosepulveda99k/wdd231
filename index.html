@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Rodrigo Sepulveda, showcasing web development and programming certificate.">
+    <meta name="author" content="Rodrigo Sepulveda">
+    <title>Rodrigo Sepulveda - Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="/scripts/script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header with navigation -->
+    <header>
+        <div class="profile-header">
+            <img src="/images/profile-picture.jpg" alt="Rodrigo S" class="profile-pic">
+            <h1>Rodrigo Sepulveda</h1>
+        </div>
+    </header>
+    <nav>
+        <a id="menu" href="#"></a>
+        <ul class="navigation">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="https://github.com/rodrigosepulveda99k">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/rodrigo-sepulveda-512486149/">LinkedIn</a></li>
+        </ul>
+    </nav>
+    <!-- Main content with 3 sections -->
+    <main>
+        <!-- Course Work Section -->
+        <section class="coursework-section">
+            <h2>Course Work</h2>
+            <ul>
+                <li>• </li>
+                <li>• </li>
+                <li>• </li>
+            </ul>
+        </section>
+
+        <!-- Location section -->
+        <section class="location-section">
+            <h2>Mendoza, Argentina</h2>
+            <img src="images/mendoza.webp" alt="Mountain Mdz">
+            <p>Potrerillos</p>
+        </section>
+
+        <!-- Certificate Section -->
+        <section class="certificate-section">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filter-buttons">
+                <button id="show-all">All</button>
+                <button id="show-cse">CSE</button>
+                <button id="show-wdd">WDD</button>
+            </div>
+            <div id="course-container">
+                <button class="course-btn">CSE 110</button>
+                <button class="course-btn">WDD 130</button>
+                <button class="course-btn">CSE 111</button>
+                <button class="course-btn">CSE 210</button>
+                <button class="course-btn">WDD 131</button>
+                <button class="course-btn">WDD 231</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer with copyright and last modified information -->
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Rodrigo Sepulveda, Mendoza.</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        // Current year dynamically
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+
+        // The last modified date
+        document.getElementById('lastModified').textContent = "Last Update: " + document.lastModified;
+    </script>
+
+</body>
+</html>

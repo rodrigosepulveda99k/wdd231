@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e4e4eb;
+    color: #333;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #2f5455;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 10px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+header,
+main {
+	margin: 0 auto;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+header h1 {
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+
+/* Navigation Styles */
+nav {
+	background-color: #90a9b9;
+	margin: 0 auto;
+    text-align: center;
+}
+
+nav ul {
+	list-style-type: none;
+}
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration:overline;
+}
+
+.active {
+	color: yellow;
+}
+
+/* Hamburger Menu (Small Screen) */
+/* Mobile View ***************/
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: #eee;
+	color: #000;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
+
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover, navigation a:active {
+	color: white;
+	background-color: black;
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.*/
+@media only screen and (min-width: 40em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+}
+
+/* Larger Views ******************************/
+@media (min-width: 640px) {
+	nav ul {
+		display: flex;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+.coursework-section,
+.location-section,
+.certificate-section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.coursework-section ul li {
+    padding: 5px 0;
+    font-size: 1.1em;
+    border: 10px #333;
+}
+
+.location-section img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.certificate-section .filter-buttons {
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #412f63;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff6347; /* Tomato color */
+}
+
+.course-btn {
+    background-color: #6d28d9; /* Purple */
+    margin: 5px;
+}
+
+.course-btn:hover {
+    background-color: #9333ea; /* Lighter purple */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2f5455;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Course Card Styles */
+.course-card {
+    background-color: #e0e7ff; /* Light Blue */
+    border: 1px solid #1e3a8a;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.completed-course {
+    background-color: #d1fae5; /* Light Green for completed courses */
+    border-color: #10b981; /* Green border */
+}
+
+/* Responsive Design */
+@media (min-width: 769px) {
+    header {
+        flex-direction: column; /* Ensures header content remains stacked on larger screens */
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .coursework-section,
+    .location-section,
+    .certificate-section {
+        width: 48%;
+    }
+}
