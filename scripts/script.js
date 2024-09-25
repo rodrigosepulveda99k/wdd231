@@ -27,7 +27,7 @@ const courses = [
 // Display Courses Function
 function displayCourses(filter = "all") {
     const courseContainer = document.getElementById('course-container');
-    courseContainer.innerHTML = ''; // Clear the container
+    courseContainer.innerHTML = ''; 
     
     const filteredCourses = courses.filter(course => {
         if (filter === 'all') return true;
@@ -39,7 +39,7 @@ function displayCourses(filter = "all") {
         courseDiv.classList.add('course-card');
         
         if (course.completed) {
-            courseDiv.classList.add('completed-course'); // Style completed courses
+            courseDiv.classList.add('completed-course'); 
         }
 
         courseDiv.innerHTML = `

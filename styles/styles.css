@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap');
-
 * {
 	margin: 0;
 	padding: 0;
@@ -77,8 +75,7 @@ nav a:hover {
 	color: yellow;
 }
 
-/* Hamburger Menu (Small Screen) */
-/* Mobile View ***************/
+/* Hamburger Menu - Mobile View(Small Screen) */
 #menu {
 	display: block;
 	font-size: 2rem;
@@ -126,13 +123,13 @@ nav a:hover {
 	content: "X";
 }
 
-/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.*/
+/* Media Query for wider than mobile viewports*/
 @media only screen and (min-width: 40em) {
 	.navigation {
 		display: flex;
 	}
 	.navigation li {
-		display: block; /* change state in small view */
+		display: block; 
 		flex: 1 1 100%;
 	}
 	.navigation a {
@@ -143,7 +140,7 @@ nav a:hover {
 	}
 }
 
-/* Larger Views ******************************/
+/* Larger Views */
 @media (min-width: 640px) {
 	nav ul {
 		display: flex;
