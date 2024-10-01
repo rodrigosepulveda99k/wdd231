@@ -9,11 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/hp.css">
     <script src="scripts/hp.js" defer></script>
+    <meta property="og:title" content="Home Project" />
+    <meta property="og:type" content="home.page" />
+    <meta property="og:url" content="https://rodrigosepulveda99k.github.io/wdd231/" />
+    <meta property="og:image" content="https://rodrigosepulveda99k.github.io/wdd231/images/profile-picture.webp" />
 </head>
 <body>
-
     <!-- Header & navigation -->
     <header>
         <div class="profile-header">
@@ -41,14 +45,12 @@
                 <li>• </li>
             </ul>
         </section>
-
         <!-- Location section -->
         <section class="location-section">
             <h2>Mendoza, Argentina</h2>
             <img src="images/mendoza.webp" alt="Mountain Mdz">
             <p>Potrerillos</p>
         </section>
-
         <!-- Certificate Section -->
         <section class="certificate-section">
             <h2>Web and Computer Programming Certificate</h2>
@@ -67,16 +69,13 @@
             </div>
         </section>
     </main>
-
     <footer>
         <p>&copy; <span id="currentyear"></span> Rodrigo Sepulveda, Mendoza.</p>
         <p id="lastModified"></p>
     </footer>
-
     <script>
         // Current year dynamically
         document.getElementById('currentyear').textContent = new Date().getFullYear();
-
         // The last modified date
         document.getElementById('lastModified').textContent = "Last Update: " + document.lastModified;
     </script>
