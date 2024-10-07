@@ -16,10 +16,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles/fontello.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/home.css">
     <link rel="icon" href="images/favicon.ico">
 </head>
 
@@ -45,56 +45,80 @@
             </ul>
         </nav>
     </header>
+    <div class="hero">
+        <div class="call-action"><a href="join.html">Join&nbsp;Now</a></div>
+        <img src="images/hero.webp"  sizes="100vw" alt="Mendoza Mountain">
+    </div>
     <main>
-        <div class="hero">hero image</div>
         <h1>Home</h1>
-        <div class="home-card events">
-            <h2 class="home-card-title">Events</h2>
-            <div id="next-event">
-                data on next event
+        <div class="home-highlights">
+            <div class="home-card events">
+                <h2 class="home-card-title">Events</h2>
+                <div id="next-event">
+                    <p><strong>Next event:</strong> Activity</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla tempore nihil maxime pariatur eaque modi consectetur vel quia ullam quam, saepe, culpa magnam suscipit eligendi nesciunt dolorem eveniet recusandae cum.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quaerat quam laboriosam eum modi. Hic ad accusantium velit consectetur mollitia, accusamus quas, voluptas animi, rerum nobis molestiae ab odit sint?</p>
+                </div>
+            </div>
+            <div class="home-card current-weather">
+                <h2 class="home-card-title">Current Weather</h2>
+                <div id="current-weather">
+                    <img src="https://openweathermap.org/img/w/04n.png" id="weather-icon" alt="weather icon" class="weather-icon" width="50" height="50">
+                    <div class="weather-data" id="weather-data">
+                        <p><strong>xx°</strong> F</p>
+                        <p>High: xx°</p>
+                        <p>Low: xx°</p>
+                        <p>Humidity: xx%</p>
+                        <p>Sunrise: X:XXam</p>
+                        <p>Sunset: X:XXpm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="home-card weather-forecast">
+                <h2 class="home-card-title">Weather Forecast</h2>
+                <div id="weather-forecast">
+                    <p>Today: <strong>xx°F</strong></p>
+                    <p>Tomorrow: <strong>xx°F</strong></p>
+                    <p>Next Day: <strong>xx°F</strong></p>
+                </div>
             </div>
         </div>
-        <div class="home-card current-weather">
-            <h2 class="home-card-title">Current Weather</h2>
-            <div id="current-weather">
-                current weather data
-            </div>
-        </div>
-        <div class="home-card weather-forecast">
-            <h2 class="home-card-title">Weather Forecast</h2>
-            <div id="weather-forecast">
-                3-day forecast
-            </div>
-        </div>
-        <div id="featured-members">
+        <div id="member-spotlight">
             <div class="featured-member-card">
-                <p class="name">Placeholder</p>
-                <img src="images/150x150.webp" alt="Placeholder image" width="100" height="100">
-                <p class="email"><strong>EMAIL:</strong> info@example.com</p>
-                <p class="phone">Phone: +838-123-123-1234</p>
-                <p class="url">www.placeholder.com</p>
-                <p class="membership">Member</p>
+                <div class="title"><p class="company-name">Placeholder</p><p>Gold Member</p></div>
+                <div class="content">
+                    <div class="logo"><img src="images/150x150.webp" alt="Placeholder image" width="100" height="100"></div>
+                    <div class="member-data">
+                        <p class="email"><strong>EMAIL:</strong> info@example.com</p>
+                        <p class="phone">Phone: +838-123-123-1234</p>
+                        <p class="url">www.placeholder.com</p>
+                        <p class="membership">Member</p>
+                    </div>
+                </div>  
             </div>
-        </div>
-        <div id="featured-members">
             <div class="featured-member-card">
-                <p class="name">Placeholder</p>
-                <img src="images/150x150.webp" alt="Placeholder image" width="100" height="100">
-                <p class="email"><strong>EMAIL:</strong> info@example.com</p>
-                <p class="phone">Phone: +838-123-123-1234</p>
-                <p class="url">www.placeholder.com</p>
-                <p class="membership">Member</p>
+                <div class="title"><p class="company-name">Placeholder</p><p>Gold Member</p></div>
+                <div class="content">
+                    <div class="logo"><img src="images/150x150.webp" alt="Placeholder image" width="100" height="100"></div>
+                    <div class="member-data">
+                        <p class="email"><strong>EMAIL:</strong> info@example.com</p>
+                        <p class="phone">Phone: +838-123-123-1234</p>
+                        <p class="url">www.placeholder.com</p>
+                        <p class="membership">Member</p>
+                    </div>
+                </div>  
             </div>
-        </div>
-        </div>
-        <div id="featured-members">
             <div class="featured-member-card">
-                <p class="name">Placeholder</p>
-                <img src="images/150x150.webp" alt="Placeholder image" width="100" height="100">
-                <p class="email"><strong>EMAIL:</strong> info@example.com</p>
-                <p class="phone">Phone: +838-123-123-1234</p>
-                <p class="url">www.placeholder.com</p>
-                <p class="membership">Member</p>
+                <div class="title"><p class="company-name">Placeholder</p><p>Gold Member</p></div>
+                <div class="content">
+                    <div class="logo"><img src="images/150x150.webp" alt="Placeholder image" width="100" height="100"></div>
+                    <div class="member-data">
+                        <p class="email"><strong>EMAIL:</strong> info@example.com</p>
+                        <p class="phone">Phone: +838-123-123-1234</p>
+                        <p class="url">www.placeholder.com</p>
+                        <p class="membership">Member</p>
+                    </div>
+                </div>  
             </div>
         </div>
     </main>
@@ -126,6 +150,8 @@
         // The last modified date
         document.getElementById('lastModified').textContent = "Last Update: " + document.lastModified;
     </script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
 </body>
 
 </html>

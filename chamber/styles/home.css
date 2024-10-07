@@ -1,0 +1,162 @@
+.hero {
+    margin: 0 auto;
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.call-action {
+    float: left;
+    position: absolute;
+    right: 15%;
+    bottom: 40px;
+    max-width: 25%;
+    align-items: center;
+    text-align: center;
+    z-index: 50;
+}
+
+.call-action a {
+    background-color: var(--secondary-color);
+    color: var(--secondary-color-text);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 #00000080;
+    text-decoration: none;
+    font-size: 1.2em;
+    z-index: 100;
+}
+
+.call-action a:hover {
+    background-color: var(--accent1-color);
+    color: var(--accent1-color-text);
+}
+
+.home-highlights,
+#member-spotlight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.home-card {
+    margin-bottom: 20px;
+    background-color: var(--accent2-color);
+    box-shadow: 0 4px 8px 0 #00000080;
+}
+
+.home-card > h2 {
+    background-color: var(--primary-color);
+    color: var(--primary-color-text);
+    font-weight: 500;
+    padding: 3px;
+    text-align: center;
+}
+
+.home-card > div {
+    padding: 15px;
+}
+
+#current-weather {
+    display: flex;
+    flex-direction: row;
+}
+
+#current-weather > .logo {
+    flex: 1;
+}
+
+#current-weather .weather-data {
+    margin-left: 20px;
+    flex: 3;
+}
+
+#weather-forecast {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.featured-member-card {
+    margin-bottom: 20px;
+    background-color: var(--accent2-color);
+    border-radius: 10px;
+    /* padding: 15px; */
+    box-shadow: 0 4px 8px 0 #00000080;
+}
+
+.featured-member-card .title {
+    text-align: center;
+    border-bottom: 1px solid grey;
+    padding: 5px;
+}
+
+.featured-member-card .title .company-name {
+    font-size: 1.5em;
+}
+
+.featured-member-card .content {
+    display: flex;
+    /* flex: row; */
+    padding: 15px;
+    justify-content: space-around;
+}
+
+.featured-member-card .logo {
+    align-items: center;
+    text-align: center;
+    flex: 25%;
+}
+
+.featured-member-card .member-data {
+    margin-left: 15px;
+}
+
+/**********************/
+/* dark mode settings */
+/**********************/
+
+body.dark-mode .home-card,
+body.dark-mode .featured-member-card {
+    background-color: var(--dark-card-color);
+}
+
+@media screen and (min-width: 640px) {
+    .call-action a {
+        font-size: 1.5em;
+    }
+    
+    .home-highlights,
+    #member-spotlight {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .home-card {
+        flex:1;
+    }
+    
+    .home-card.events {
+        flex:2;
+    }
+    .home-card > h2 {
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .featured-member-card:nth-child(n+3) {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 960px) { 
+    .featured-member-card:nth-child(n+3) {
+        display:block;
+    }
+
+    .home-highlights,
+    #member-spotlight {
+        gap: 30px;
+    }
+}
