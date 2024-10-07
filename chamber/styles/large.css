@@ -1,0 +1,35 @@
+@media screen and (min-width: 640px) {
+
+    header {
+        display: flex;
+        align-items:end;
+    }
+
+    #menu, #themetoggle-mobile {
+        display: none;
+    }
+
+    #themetoggle-desk {
+        display: block;
+    }
+
+    nav {
+        grid-template-rows: 1fr;
+        flex: 1 1 100%;
+        transition: none;
+    }
+
+    nav ul, nav ul.show {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .title-block {
+        min-width: 200px;
+    }
+
+    .footer-items {
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+    }
+}

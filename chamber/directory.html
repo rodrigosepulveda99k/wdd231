@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mendoza - Chamber of Commerce</title>
+    <meta name="description" content="Chamber of Commerce">
+    <meta name="author" content="Rodrigo Sepulveda">
+    <meta property="og:title" content="Medoza - Chamber of Commerce - Home">
+    <meta property="og:type" content="Home Page">
+    <meta property="og:image" content="https://rodrigosepulveda99k.github.io/wdd231/">
+    <meta property="og:url" content="https://rodrigosepulveda99k.github.io/wdd231/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/fontello.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body class="">
+    <header>
+        <div class="header-section">
+            <div class="nav-logo">
+                <a href="index.html" id="logo">
+                    <img src="images/icono.webp" width="80" height="80" alt="Mendoza Chamber of Commerce logo">
+                </a>
+            </div>
+            <div class="title-section">
+                <h2>Mendoza</h2>
+                <p class="navsub"> Chamber of Commerce</p>
+            </div>
+        </div>
+        <nav class="navigation">
+            <ul class="nav-section">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="directory.html" class="nav-link active">Directory</a></li>
+                <li class="nav-item"><a href="join.html" class="nav-link">Join</a></li>
+                <li class="nav-item"><a href="discover.html" class="nav-link">Discover</a></li>
+        </nav>
+    </header>
+    <main>
+        <h1>Business Directory</h1>
+        <div class="grid-list">
+            <p>Toggle display: <button id="list-toggle">Grid/List</button></p>
+        </div>
+        <div class="directory-cards" id="cards-container">
+            <div class="company-card"><p class="name">Placeholder</p><img src="images/150x150.webp" alt="Placeholder image" width="100" height="100"><p class="address">Placeholder text</p><p class="phone">Phone: +838-123-123-1234</p><p class="whatsapp">Whatsapp: +838-123-123-1234</p><p class="url">www.placeholder.com</p><p class="membership">Member</p></div>
+            <div class="company-card"><p class="name">Placeholder</p><img src="images/150x150.webp" alt="Placeholder image" width="100" height="100"><p class="address">Placeholder text</p><p class="phone">Phone: +838-123-123-1234</p><p class="whatsapp">Whatsapp: +838-123-123-1234</p><p class="url">www.placeholder.com</p><p class="membership">Member</p></div>
+            <div class="company-card"><p class="name">Placeholder</p><img src="images/150x150.webp" alt="Placeholder image" width="100" height="100"><p class="address">Placeholder text</p><p class="phone">Phone: +838-123-123-1234</p><p class="whatsapp">Whatsapp: +838-123-123-1234</p><p class="url">www.placeholder.com</p><p class="membership">Member</p></div>
+            <div class="company-card"><p class="name">Placeholder</p><img src="images/150x150.webp" alt="Placeholder image" width="100" height="100"><p class="address">Placeholder text</p><p class="phone">Phone: +838-123-123-1234</p><p class="whatsapp">Whatsapp: +838-123-123-1234</p><p class="url">www.placeholder.com</p><p class="membership">Member</p></div>
+            <div class="company-card"><p class="name">Placeholder</p><img src="images/150x150.webp" alt="Placeholder image" width="100" height="100"><p class="address">Placeholder text</p><p class="phone">Phone: +838-123-123-1234</p><p class="whatsapp">Whatsapp: +838-123-123-1234</p><p class="url">www.placeholder.com</p><p class="membership">Member</p></div>
+            <div class="company-card"><p class="name">Placeholder</p><img src="images/150x150.webp" alt="Placeholder image" width="100" height="100"><p class="address">Placeholder text</p><p class="phone">Phone: +838-123-123-1234</p><p class="whatsapp">Whatsapp: +838-123-123-1234</p><p class="url">www.placeholder.com</p><p class="membership">Member</p></div>
+        </div>
+    </main>
+    <script src="scripts/directory.js"></script>
+    <footer>
+    <div class="footer-items">
+        <div class="footer-card footer-address">
+            <p>Mendoza - Chamber of Commerce</p>
+            <p>Av. Siempre viva 176</p>
+            <p>Ciudad, Mendoza, Argentina</p>
+            <p>Argentinacampeon2022@gmail.com</p>
+            <p>+5426145679885</p>
+        </div>
+        <div class="footer-card footer-icons">
+            <a href="" aria-label="YouTube"><img src="images/youtube.svg" alt="Youtube" width="50" height="50"></a>
+            <a href="" aria-label="Twitter"><img src="images/twitter.svg" alt="X" width="50" height="50"></a>
+            <a href="" aria-label="Linked In"><img src="images/linkedin.svg" alt="Linkedin" width="50" height="50"></a>
+        </div>
+        <div class="footer-card footer-credits">
+            <p>WDD231 Class Project</p>
+            <p>Rodrigo Sepulveda</p>
+            <p>&copy; <span id="currentyear"></span>Mendoza - Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </div>
+    </footer>
+    <script>
+        // Current year dynamically
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        // The last modified date
+        document.getElementById('lastModified').textContent = "Last Update: " + document.lastModified;
+    </script>
+</body>
+</html>

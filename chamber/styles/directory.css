@@ -1,0 +1,91 @@
+.grid-list {
+    background-color: var(--primary-color);
+    color: var(--primary-color-text);
+    padding: 10px;
+    border-radius: 10px;   
+}
+
+.grid-list button {
+    border-radius: 10%;
+    padding: 5px;
+    min-width: 100px;
+    background-color: var(--accent2-color);
+    border: none;
+}
+
+.grid-list button:hover {
+    background-color: var(--accent1-color);
+}
+
+.directory-cards {
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 325fr));
+    row-gap: 5px;
+    column-gap: 5px;
+    padding: 20px;
+}
+
+.directory-cards.list {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.company-card {
+    background-color: var(--accent2-color);
+    border: 1px solid black ;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 #00000080;
+    text-align: center;
+}
+
+.directory-cards.list > .company-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.company-card > .name {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.company-card > img {
+    margin: 5px;
+}
+
+.directory-cards.list > .company-card > img {
+    margin: 10px;
+}
+
+.company-card > .address {
+    text-align: left;
+    margin-bottom: 10px;
+    min-height: 35px;
+}
+
+.company-card > .url {
+    margin-bottom: 10px;
+}
+
+.company-card > .membership {
+    background-color: #362c2c;
+    color: white;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.company-card > .membership.silver {
+    background-color: #c0c0c0;
+    color: black;
+}
+
+.company-card > .membership.gold {
+    background-color: #e4cf7c;
+    color: black;
+}
+

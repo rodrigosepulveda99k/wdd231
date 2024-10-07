@@ -1,0 +1,85 @@
+{
+    "members": [
+        {
+            "name": "LocuraMagic Comics!",
+            "address": "Necochea 40 - Mendoza Ciudad",
+            "phone": "+5492616290056",
+            "url": "https://www.locuramagic.com/",
+            "image": "images/locura-magic.webp",
+            "membership": 1,
+            "email": "locuramagic@gmail.com"
+        },
+        {
+            "name": "Mega Tecnologia",
+            "address": "Gutierrez 491 Mendoza, Capital",
+            "phone": "+1125658002",
+            "url": "www.megatecnologia.com.ar",
+            "image": "images/mega-tecnologia.webp",
+            "membership": 1,
+            "email": "ventasweb@megatecnologia.com.ar"
+        },
+        {
+            "name": "Fuesmen",
+            "address": "Garibaldi 405. Cdad.",
+            "phone": "+2615573674",
+            "url": "https://www.fuesmen.edu.ar/",
+            "image": "images/fuesmen.webp",
+            "membership": 2,
+            "email": "info@fuesmen.edu.ar"
+        },
+        {
+            "name": "SBS",
+            "address": "Sarmiento 77, Ciudad, Mendoza",
+            "phone": "+1126695353",
+            "url": "https://www.sbs.com.ar/",
+            "image": "images/sbs.webp", 
+            "membership": 2,
+            "email": "sac@sbs.com.ar"
+        },
+        {
+            "name": "Yenny",
+            "address": "Av. San Martín 1087,Mendoza",
+            "phone": "+54261155130507",
+            "url": "https://www.yenny-elateneo.com/",
+            "image": "images/yenny.webp",
+            "membership": 3,
+            "email": "yenni@gmail.com"
+        },
+        {
+            "name": "Acasa",
+            "address": "Av. Bartolomé Mitre 1398, Ciudad, Mendoza",
+            "phone": "+542615255720",
+            "url": "https://acasatienda.com.ar/",
+            "image": "images/acasa.webp",
+            "membership": 1,
+            "email": "ventas@acasatienda.com.ar"
+        },
+        {
+            "name": "Chocolezza",
+            "address": "Av. Las Heras 435, Mendoza",
+            "phone": "+5402614250498",
+            "url": "http://www.chocolezza.com.ar/",
+            "image": "images/chocolezza.webp",
+            "membership": 1,
+            "email": "chocolezza@gmail.com"
+        },
+        {
+            "name": "De la Plazoleta",
+            "address": "Residencial Sur, Rufino Ortega 27, Mendoza",
+            "phone": "+542616554443",
+            "url": "https://delaplazoleta.mitiendanube.com/",
+            "image": "images/de-la-plazoleta.webp",
+            "membership": 2,
+            "email": "dlp@gmail.com"
+        },
+        {
+            "name": "Juleriaque",
+            "address": "Mendoza Plaza Shopping, Lateral Nte. Acceso Este 3280 Mendoza",
+            "phone": "+542615101436",
+            "url": "https://www.juleriaque.com.ar/",
+            "image": "images/juleriaque.webp",
+            "membership": 1,
+            "email": "juleriaque@gmail.com"
+        }
+    ]
+}
