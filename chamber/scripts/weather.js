@@ -2,11 +2,11 @@ const weatherData = document.querySelector("#weather-data");
 const weatherIcon = document.querySelector("#weather-icon");
 const weatherForecast = document.querySelector("#weather-forecast");
 
-const lat = -37.92;
-const lon = 175.97;
-const key = "c5647d83bb1c1b2875740411edf17c8f";
-const urlCurrentWeather = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=metric`;
-const urlFiveDayForecast = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${key}&units=metric`
+const lat = -32.89;
+const lon = -68.73;
+const key = "cb78f50543c6e823b985d54a2844f8498";
+const urlCurrentWeather = `https://api.openweathermap.org/data/2.5/weather?lat=-32.89&lon=68.82&appid=b78f50543c6e823b985d54a2844f8498&units=metric`;
+const urlFiveDayForecast = `https://api.openweathermap.org/data/2.5/forecast?lat=-32.89&lon=68.82&appid=b78f50543c6e823b985d54a2844f8498&units=metric`
 
 async function apiFetchCurrentWeather() {
     try {
