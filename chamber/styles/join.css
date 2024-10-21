@@ -1,0 +1,179 @@
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+}
+
+fieldset {
+    border: 1px solid var(--accent1-color);
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+fieldset>label {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--primary-color-text);
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+.membership-card {
+    border: 1px solid var(--accent1-color);
+    border-radius: 10px;
+    margin: 7px auto;
+    padding: 6px;
+    text-align: center;
+    background-color: var(--accent2-color);
+    cursor: pointer;
+}
+
+#goldCard:hover {
+    background-color: #ffd700;
+    animation-play-state: paused;
+}
+
+#goldModal,
+#goldModal hr {
+    border-color: #ffd700;
+}
+
+#silverCard:hover {
+    background-color: #c0c0c0;
+}
+
+#silverModal,
+#silverModal hr {
+    border-color: #c0c0c0;
+}
+
+#bronzeCard:hover {
+    background-color: #CD7F32;
+}
+
+#bronzeModal,
+#bronzeModal hr{
+    border-color: #CD7F32;
+}
+
+.membership-card:hover {
+    background-color: #ffffff;
+}
+
+.membership-card hr {
+    width: 75%;
+    margin: 5px auto;
+}
+
+.membership-card-details {
+    font-size: .8em;
+}
+
+dialog.modal {
+    position: fixed;
+    align-self: center;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    padding: 1.5rem;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+}
+
+dialog.modal::backdrop {
+    background-color: rgb(0, 0, 0, .5);
+}
+
+dialog.modal p {
+    margin-top: 10px;
+}
+
+dialog.modal hr {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #d3d3d3;
+}
+
+.membership-card {
+    animation: 1s ease-out 0s 1 slideInFromRight;
+}
+
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(300%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+.membership-card:nth-child(2) {
+    animation-delay: 0.05s;
+}
+
+.membership-card:nth-child(3) {
+    animation-delay: 0.10s;
+}
+
+.membership-card:nth-child(4) {
+    animation-delay: 0.15s;
+}
+
+#goldCard {
+    animation: 1s ease-out 0s 1 slideInFromRight, 2s wiggle 8s linear infinite;
+  }
+  
+  @keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-5deg);
+    }
+    20% {
+      transform: rotateZ(4deg);
+    }
+    25% {
+      transform: rotateZ(-4deg);
+    }
+    30% {
+      transform: rotateZ(2.5deg);
+    }
+    35% {
+      transform: rotateZ(-1.5deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+
+@media screen and (min-width: 640px) {
+    main {
+        flex-direction: row;
+    }
+
+    .form-section {
+        flex: 70%
+    }
+
+    .sidebar {
+        flex: 30%;
+        margin: 20px;
+    }
+
+}

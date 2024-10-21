@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mendoza - Chamber of Commerce</title>
+    <meta name="description" content="Chamber of Commerce">
+    <meta name="author" content="Rodrigo Sepulveda">
+    <meta property="og:title" content="Medoza - Chamber of Commerce - Home">
+    <meta property="og:type" content="Home Page">
+    <meta property="og:image" content="https://rodrigosepulveda99k.github.io/wdd231/">
+    <meta property="og:url" content="https://rodrigosepulveda99k.github.io/wdd231/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/join.css">
+</head>
+
+<body class="">
+    <dialog class="modal" id="goldModal">
+        <h2>Gold Membership</h2>
+        <hr>
+        <p>Get the most exposure within our organization.</p>
+        <p>Free entry to all chapter events.</p>
+        <p>Be listed on our homepage.</p>
+        <p>Connect with others to achieve your goals faster.</p>
+        <p>Become known across all Middle Earth</p>
+        <p>25,000 yearly fee</p>
+    </dialog>
+    <dialog class="modal" id="silverModal">
+        <h2>Silver Membership</h2>
+        <hr>
+        <p>Be listed on our homepage.</p>
+        <p>75% discount to all chapter events</p>
+        <p>Connect with others to achieve your goals faster.</p>
+        <p>Become known across all Middle Earth</p>
+        <p>18,000 yearly fee</p>
+    </dialog>
+    <dialog class="modal" id="bronzeModal">
+        <h2>Bronze Membership</h2>
+        <hr>
+        <p>50% discount to all chapter events</p>
+        <p>Connect with others to achieve your goals faster.</p>
+        <p>Become known across all Middle Earth</p>
+        <p>9,000 yearly fee</p>
+    </dialog>
+    <dialog class="modal" id="npModal">
+        <h2>Non-Profit Membership</h2>
+        <hr>
+        <p>Free membership.</p>
+        <p>15% discount to all chapter events.</p>
+        <p>Extend the reach of your organization to further your purpose.</p>
+        <p>Become known across all Middle Earth</p>
+    </dialog>
+    <header>
+        <div class="header-section">
+            <div class="nav-logo">
+                <a href="index.html" id="logo">
+                    <img src="images/icono.webp" width="80" height="80" alt="Mendoza Chamber of Commerce logo">
+                </a>
+            </div>
+            <div class="title-section">
+                <h2>Mendoza</h2>
+                <p class="navsub"> Chamber of Commerce</p>
+            </div>
+        </div>
+        <nav class="navigation">
+            <ul class="nav-section">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="directory.html" class="nav-link">Directory</a></li>
+                <li class="nav-item"><a href="join.html" class="nav-link">Join</a></li>
+                <li class="nav-item"><a href="discover.html" class="nav-link">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="form-section">
+            <h1>Join us</h1>
+            <form action="thankyou.html" method="get">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="firstName">First name: <input type="text" name="firstName" id="firstName" autocomplete="given-name"
+                            required></label>
+                    <label for="lastName">Last name: <input type="text" name="lastName" id="lastName" autocomplete="family-name"
+                            required></label>
+                    <label for="title">Organization title: <input type="text" name="orgTitle" id="title"
+                            autocomplete="organization-title" pattern="[a-zA-Z\-\s]{7,}"></label>
+                    <label for="email">Email: <input type="email" name="email" id="email" autocomplete="email" required
+                            placeholder="you@example.com"></label>
+                    <label for="phone">Phone number: <input type="tel" name="phone" id="phone" autocomplete="tel"
+                            required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Business/Organization Information</legend>
+                    <label for="orgName">Business/Organization Name: <input type="text" name="orgName" id="orgName"
+                            autocomplete="organization" required></label>
+                    <label for="membership">Membership level: <select name="membership" id="membership" required>
+                            <option value="" selected disabled>Select a level...</option>
+                            <option value="gold">Gold</option>
+                            <option value="silver">Silver</option>
+                            <option value="bronze">Bronze</option>
+                            <option value="np">Non-Profit</option>
+                        </select></label>
+                    <label for="orgDescription">Business/Organization Description: <textarea name="orgDescription"
+                            id="orgDescription"></textarea></label>
+                    <input type="hidden" name="timestamp" id="timestamp">
+                </fieldset>
+                <button type="submit">Join Now</button>
+            </form>
+        </div>
+        <div class="sidebar">
+            <div class="membership-card" id="goldCard">
+                <h3>Gold</h3>
+                <hr>
+                <p class="membership-card-details">Click to see membership level details</p>
+            </div>
+            <div class="membership-card" id="silverCard">
+                <h3>Silver</h3>
+                <hr>
+                <p class="membership-card-details">Click to see membership level details</p>
+            </div>
+            <div class="membership-card" id="bronzeCard">
+                <h3>Bronze</h3>
+                <hr>
+                <p class="membership-card-details">Click to see membership level details</p>
+            </div>
+            <div class="membership-card" id="npCard">
+                <h3>Non-Profit</h3>
+                <hr>
+                <p class="membership-card-details">Click to see membership level details</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-items">
+            <div class="footer-card footer-address">
+                <p>Mendoza - Chamber of Commerce</p>
+                <p>Av. Siempre viva 176</p>
+                <p>Ciudad, Mendoza, Argentina</p>
+                <p>Argentinacampeon2022@gmail.com</p>
+                <p>+5426145679885</p>
+            </div>
+            <div class="footer-card footer-icons">
+            <a href="" aria-label="YouTube"><img src="images/youtube.svg" alt="Youtube" width="50" height="50"></a>
+            <a href="" aria-label="Twitter"><img src="images/twitter.svg" alt="X" width="50" height="50"></a>
+            <a href="" aria-label="Linked In"><img src="images/linkedin.svg" alt="Linkedin" width="50" height="50"></a>
+            </div>
+            <div class="footer-card footer-credits">
+                <p>WDD231 Class Project</p>
+                <p>Rodrigo Sepulveda</p>
+                <p>&copy; <span id="currentyear"></span>Mendoza - Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Current year dynamically
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        // The last modified date
+        document.getElementById('lastModified').textContent = "Last Update: " + document.lastModified;
+    </script>
+    <script defer async src="scripts/main.js"></script>
+    <script defer async src="scripts/join.js"></script>
+</body>
+
+</html>
