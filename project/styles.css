@@ -1,0 +1,67 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background-color: #4CAF50;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+}
+
+/* Color Schema Section */
+#color-schema {
+    background-color: #FFC107;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* Typography Section */
+#typography {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* Wireframe Section */
+.wireframe {
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: #4CAF50;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    margin-top: 20px;
+}
