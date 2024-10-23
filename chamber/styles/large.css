@@ -32,5 +32,25 @@
         display: grid;
         grid-template-columns: 2fr 1fr 2fr;
     }
+    
+    .footer-credits {
+        margin: 0 0 0 auto
+    }
+
+    main h1 {
+        text-align: center;
+    }
+
+    .main-left-sidebar {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .main-left-sidebar h1 {
+        grid-column: 1/3;
+    }
+
+    .vertical-image-gallery img:hover {
+        box-shadow: 0 4px 8px 0 #00000080;
+    }
+
 }
-/* fix error in large pages more 640 */

@@ -135,6 +135,45 @@ main h1 {
     text-align: center;
 }
 
+.main-left-sidebar {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1em;
+}
+
+.vertical-image-gallery {
+    text-align: center;
+}
+
+.vertical-image-gallery img {
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.vertical-image-gallery figcaption {
+    margin: 10px;
+    font-weight: 600;
+}
+
+#visit-message {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.6em;
+}
+
+.sidebar-card {
+    border: 1px solid rgb(78, 132, 129);
+    border-radius: 8px;
+    background-color: var(--card-background);
+    margin-bottom: 1em;
+    padding: 1em;
+    box-shadow: 0 4px 8px 0 #00000080;
+}
+
+.sidebar-card li {
+    list-style-position: inside;
+}
+
 /* Footer*/
 
 footer {
