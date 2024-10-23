@@ -7,14 +7,14 @@ const displayMessage = () => {
         let lastVisit = localStorage.lastVisit;
         const dayCount = (currentDate - lastVisit) / msPerDay;
         if ( dayCount < 1) {
-            msgOutput.textContent = "Back so soon? Awesome!"
+            msgOutput.textContent = "You're back Great!"
         } else if (dayCount.toFixed(0) == 1) {
-            msgOutput.textContent = `You last visited 1 day ago.`
+            msgOutput.textContent = `You last visited 1 day ago`
         } else {
-            msgOutput.textContent = `You last visited ${dayCount.toFixed(0)} days ago.`
+            msgOutput.textContent = `You last visited ${dayCount.toFixed(0)} days ago`
         }
     } else {
-        msgOutput.textContent = "Welcome! Let us know if you have any questions."
+        msgOutput.textContent = "Welcome! Contact us for more information"
     }
 }
 
